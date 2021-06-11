@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#calculadora{
+    margin: auto;
+    margin-top: 100px;
+    width: 270px;
+    border: black solid 1px;
+    border-radius: 13px;
+    background-color: rgb(44, 205, 211);
+}
+
+#historico{
+    border: black solid 1px;
+    background-color: rgb(88, 88, 88);
+    color: rgb(6, 255, 89);
+    height: 70px;
+    overflow: auto;
+    margin: 17px;
+    padding: 3px;
+}
+
+#operacao{
+    background-color: rgb(88, 88, 88);
+    border: black solid 1px;
+    color: rgb(6, 255, 89);
+    margin: 17px;
+    padding: 5px;
+    font-size: 15pt;
+}
+
+
+#botoes{
+    /* border: black solid 1px; */
+    overflow: auto;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+#numeros{
+    /* border: black solid 1px; */
+    width: 146px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.num, .operador, .acao{
+    padding: 6.3px 16px;
+
+}
+.num{
+    font-size: 17pt;
+    margin: 0 0;
+    margin-left: 0;
+}
+
+#limpar{
+    width: 146px;
+    font-size: 14pt;
+    /* margin-left: 10px; */
+}
+
+#zero{
+    padding: 5px 65px;
+    /* margin-right: 45px; */
+}
+
+#container-numeros-limpar, #operacoes{
+    float: left;
+    
+    /* position: relative; */
+    margin: 0;
+}
+
+#operacoes{
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+}
+
+#operacoes button{
+    font-size: 15pt;
+    height: 42px;
+}
+button{
+    margin-left: 0;
+    border-radius: 0;
+    border: rgb(0, 85, 124) solid 2px;
+    background-color: rgb(111, 209, 255);
+    color: rgb(0, 62, 90);
+}
+
+button:hover{
+    background-color: rgb(27, 183, 255);
+    
+}
+button:active{
+    background-color: rgb(16, 88, 121);
+    color: white;
+    transition: 0.1s;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:active{
+    background-color: rgb(179, 179, 179);
+
+}

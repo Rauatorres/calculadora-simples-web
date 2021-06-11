@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <style>
+        div{
+            border: black solid 1px;
+            margin: 10px;
+            padding: 5px;
+        }
+    </style> -->
+    <div id="calculadora">
+        <div id="historico"></div>
+        <div id="operacao">
+            <span id="operando1">0</span> <span id="operador"></span>  <span id="operando2"></span>
+        </div>
+
+        <div id="botoes">
+            <div id="container-numeros-limpar">
+                <button id="limpar" class="acao" onclick="limpar()">limpar</button>
+
+                <div id="numeros">
+                        <button class="num" onclick="adicionarNum(9)">9</button>
+                        <button class="num" onclick="adicionarNum(8)">8</button>
+                        <button class="num" onclick="adicionarNum(7)">7</button>
+                        <button class="num" onclick="adicionarNum(6)">6</button>
+                        <button class="num" onclick="adicionarNum(5)">5</button>
+                        <button class="num" onclick="adicionarNum(4)">4</button>
+                        <button class="num" onclick="adicionarNum(3)">3</button>
+                        <button class="num" onclick="adicionarNum(2)">2</button>
+                        <button class="num" onclick="adicionarNum(1)">1</button>
+                        <button id="zero" class="num" onclick="adicionarNum(0)">0</button>
+                </div>
+            </div>
+            
+            <div id="operacoes">
+                <button class="operador" onclick="operar('+')">+</button>
+                <button class="operador" onclick="operar('-')">-</button>
+                <button class="operador" onclick="operar('x')">x</button>
+                <button class="operador" onclick="operar('/')">÷</button>
+                <button class="acao" onclick="resultado()">=</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
